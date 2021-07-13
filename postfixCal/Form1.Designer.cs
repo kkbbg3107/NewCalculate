@@ -181,7 +181,6 @@ namespace postfixCal
             // 
             // btnsub
             // 
-            this.btnsub.Enabled = false;
             this.btnsub.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsub.Location = new System.Drawing.Point(522, 240);
             this.btnsub.Margin = new System.Windows.Forms.Padding(4);
@@ -194,7 +193,6 @@ namespace postfixCal
             // 
             // btnplus
             // 
-            this.btnplus.Enabled = false;
             this.btnplus.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnplus.Location = new System.Drawing.Point(522, 310);
             this.btnplus.Margin = new System.Windows.Forms.Padding(4);
@@ -207,7 +205,6 @@ namespace postfixCal
             // 
             // btnmul
             // 
-            this.btnmul.Enabled = false;
             this.btnmul.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmul.Location = new System.Drawing.Point(522, 373);
             this.btnmul.Margin = new System.Windows.Forms.Padding(4);
@@ -220,7 +217,6 @@ namespace postfixCal
             // 
             // btndiv
             // 
-            this.btndiv.Enabled = false;
             this.btndiv.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndiv.Location = new System.Drawing.Point(522, 442);
             this.btndiv.Margin = new System.Windows.Forms.Padding(4);

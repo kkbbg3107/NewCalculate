@@ -13,18 +13,18 @@ namespace postfixCal
         /// <summary>
         /// WebApi地址
         /// </summary>
-        private static readonly string Url = "https://localhost:5001/api/Calculate/PostResult";
+        private static readonly string UrlCal = "https://localhost:5001/api/Calculate/PostResult";
 
         /// <summary>
         /// 數字0-9 運算子呼叫
         /// </summary>
-        private static readonly string Url2 = "https://localhost:5001/api/Calculate/PostText";
+        private static readonly string UrlNum = "https://localhost:5001/api/Calculate/PostText";
 
         /// <summary>
         /// C的呼叫 清空TEXTBOX
         /// </summary>
-        private static readonly string Url3 = "https://localhost:5001/api/Calculate/PostClear";
-
+        private static readonly string UrlClear = "https://localhost:5001/api/Calculate/PostClear";
+        
         /// <summary>
         /// 開根號
         /// </summary>
@@ -47,7 +47,6 @@ namespace postfixCal
         }
 
         bool isOperationPerformed = false;
-        bool isNotWorkOperation = false;
 
         /// <summary>
         /// 點擊對應按鈕textbox顯示v相應數值
@@ -57,41 +56,26 @@ namespace postfixCal
         private async void ButtonClick(object sender, EventArgs e)
         {            
             Button btn = sender as Button;
-            
-            if (lblText.Text != string.Empty || lblText.Text != "")
-            {
-                btnsub.Enabled = true;
-                btndiv.Enabled = true;
-                btnmul.Enabled = true;
-                btnplus.Enabled = true;
-            }
-            btn.Tag = btn.Text;
 
             // 呼叫webApi post方法 
             if (btn.Text == "api")
             {
-                try
+                string text = lblText.Text;
+
+                string json = JsonConvert.SerializeObject(text);  // 把post的參數值轉成json
+
+                HttpContent contentPost = new StringContent(json, Encoding.UTF8, "application/json"); // 定義json內容
+
+                HttpResponseMessage response = await client.PostAsync(UrlCal, contentPost); // webapi 回傳的物件
+                response.EnsureSuccessStatusCode();
+
+                var ans = response.Content.ReadAsStringAsync().Result;
+                if (lblText.Text != string.Empty)
                 {
-                    string text = lblText.Text;
-
-                    string json = JsonConvert.SerializeObject(text);  // 把post的參數值轉成json
-
-                    HttpContent contentPost = new StringContent(json, Encoding.UTF8, "application/json"); // 定義json內容
-
-                    HttpResponseMessage response = await client.PostAsync(Url, contentPost); // webapi 回傳的物件
-                    response.EnsureSuccessStatusCode();
-
-                    var ans = response.Content.ReadAsStringAsync().Result;
-                    if (lblText.Text != string.Empty)
-                    {
-                        var result = JsonConvert.DeserializeObject(ans);
-                        textBox2.Text = result.ToString();
-                    }
+                    var result = JsonConvert.DeserializeObject(ans);
+                    textBox2.Text = result.ToString();
                 }
-                catch
-                {
-                    throw null;
-                }                                                        
+                                                               
             }
             else if (btn.Text == "C") // 呼叫web API get方法
             {
@@ -101,12 +85,13 @@ namespace postfixCal
 
                 HttpContent contentPost = new StringContent(json, Encoding.UTF8, "application/json");
 
-                HttpResponseMessage response = await client.PostAsync(Url3, contentPost);
+                HttpResponseMessage response = await client.PostAsync(UrlClear, contentPost);
                 response.EnsureSuccessStatusCode();
 
                 var responseBody = await response.Content.ReadAsStringAsync();
                 var resultObj = JsonConvert.DeserializeObject<NumBtn>(responseBody);
                 lblText.Text = resultObj.text;
+                textBox3.Text = resultObj.text;
                
             }  
             else if(btn.Text == "√")
@@ -149,7 +134,7 @@ namespace postfixCal
                 HttpContent contentPost = new StringContent(json, Encoding.UTF8, "application/json"); // 定義json內容
 
 
-                HttpResponseMessage response = await client.PostAsync(Url2, contentPost);
+                HttpResponseMessage response = await client.PostAsync(UrlNum, contentPost);
                 response.EnsureSuccessStatusCode();
 
                 var responseBody = await response.Content.ReadAsStringAsync();                    
@@ -178,20 +163,25 @@ namespace postfixCal
                         case "-":
                         case "*":
                         case "/":
-
-                            lblText.Text += textBox3.Text;
-                            if (lblText.Text.Substring(lblText.Text.Length - 1) == "+" || lblText.Text.Substring(lblText.Text.Length - 1) == "-" || lblText.Text.Substring(lblText.Text.Length - 1) == "*" || lblText.Text.Substring(lblText.Text.Length - 1) == "/")
+                            try
                             {
-                                lblText.Text = lblText.Text.Substring(0, lblText.Text.Length - 1);
-                                lblText.Text += resultObj.text;
-                                isOperationPerformed = false;
+                                lblText.Text += textBox3.Text;
+                                if (lblText.Text.Substring(lblText.Text.Length - 1) == "+" || lblText.Text.Substring(lblText.Text.Length - 1) == "-" || lblText.Text.Substring(lblText.Text.Length - 1) == "*" || lblText.Text.Substring(lblText.Text.Length - 1) == "/")
+                                {
+                                    lblText.Text = lblText.Text.Substring(0, lblText.Text.Length - 1);
+                                    lblText.Text += resultObj.text;
+                                    isOperationPerformed = false;
+                                }
+                                else
+                                {
+                                    lblText.Text += resultObj.text;
+                                    textBox3.Text = string.Empty;
+                                }
                             }
-                            else
+                            catch(Exception ex)
                             {
-                                lblText.Text += resultObj.text;
-                                textBox3.Text = string.Empty;
-                            }
-                                                  
+                                MessageBox.Show("運算子不能再最前方");
+                            }                                                  
                             break;
                         case ")":
 
@@ -200,8 +190,7 @@ namespace postfixCal
                             break;
                         case "(": //後面只能接數字  
                             
-                            lblText.Text += resultObj.text;
-                            isNotWorkOperation = true;                            
+                            lblText.Text += resultObj.text;                         
                             break;
                         case "=":
 
@@ -218,26 +207,9 @@ namespace postfixCal
                         default:
 
                             textBox3.Text += resultObj.text;
-                            isNotWorkOperation = false ;
                             break;
                     }               
                 }             
-
-                if (isNotWorkOperation)
-                {
-                    btnsub.Enabled = false;
-                    btndiv.Enabled = false;
-                    btnmul.Enabled = false;
-                    btnplus.Enabled = false;
-                }
-
-                if (!isNotWorkOperation)
-                {
-                    btnsub.Enabled = true;
-                    btndiv.Enabled = true;
-                    btnmul.Enabled = true;
-                    btnplus.Enabled = true;
-                }
             }
         }        
     }

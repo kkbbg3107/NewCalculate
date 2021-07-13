@@ -194,77 +194,89 @@ namespace WebApi.Services
         /// </summary>
         /// <param name="infix">計算機輸入的算式</param>
         /// <returns>依照每個符號定義的列表</returns>
-        public List<string> ToListService(string infix) // ex (-8)-8 => "(", "-8", ")", "-", "8" 
+        public List<string> ToListService(string infix) // ex 8.5+(-9.8) => "8.5" , "+" , "(" , "-9.8" , ")"  80 + 95  => "80" , "+" , "95"
         {
+            var makeSure = string.Empty;
             var str = string.Empty;
+            var container = string.Empty;
             List<string> list = new List<string>();
-            Stack<char> stack = new Stack<char>();
-            Stack<char> stack1 = new Stack<char>();
+            Stack<string> stack = new Stack<string>();
+            Stack<string> stackToQueue = new Stack<string>();
             try
             {
-                for (int i = 0; i < infix.Length; i++)
+                for(int i = 0; i < infix.Length; i++)
                 {
-                    var c = infix[i];
-                    if (c == '(')
+                    var c = infix[i].ToString();
+                    if (c == "(")
                     {
-                        stack.Push(c);
+                        list.Add(c);
                     }
-                    else if (c == '-')
+                    else if (c == ")")
                     {
-                        if (stack.Count != 0 && stack.Peek() == '(')
+                        if (stack.Count != 0)  //負號的右括號
                         {
-                            for (int q = 0; q <= stack.Count; q++)
-                            {
-                                list.Add(stack.Pop().ToString());
-                            }
-                            stack.Push(c);
+                            container += stack.Pop();
+                            container += str;
+                            list.Add(container); // 把負數加到list
+                            container = string.Empty; // 清空字串容器
+                            str = string.Empty;
                         }
-                        else
+                        else if( str != string.Empty)
                         {
-                            list.Add(c.ToString());
-                        }
-                    }
-                    else if (c == ')')
-                    {
-                        if (stack.Count == 0)
-                        {
-                            list.Add(c.ToString());
-                        }
-                        else
-                        {
-                            for (int j = 0; j <= stack.Count; j++)
-                            {
-                                stack1.Push(stack.Pop());
-                            }
-
-                            for (int w = 0; w <= stack1.Count; w++)
-                            {
-                                str += stack1.Pop();
-                            }
                             list.Add(str);
                             str = string.Empty;
-                            list.Add(c.ToString());
+                        }
+                        list.Add(c);
+                    }
+                    else if (c == "+" || c == "*" || c == "/")
+                    {
+                        if(str != string.Empty)
+                        {
+                            list.Add(str);
+                            str = string.Empty;
+                        }
+                        list.Add(c);
+                    }
+                    else if (c == "-")
+                    {
+                        if (list.Count != 0 && list[list.Count - 1].ToString() == "(" && str != string.Empty) // 把減號加上 前面非負數
+                        {
+                            list.Add(str);
+                            str = string.Empty;
+                            list.Add(c);
+                        }
+                        else if (list.Count != 0 && list[list.Count - 1].ToString() == "(") // 負數
+                        {
+                            stack.Push(c);
+                        }
+                        else if (list.Count != 0 && list[list.Count -1].ToString() == ")") // 減號前面右括號時
+                        {
+                            list.Add(c);
+                        }                            
+                        else if (list.Count == 0)
+                        {
+                            list.Add(str);
+                            str = string.Empty;
+                            list.Add(c);
                         }
                     }
                     else
                     {
-
-                        if (stack.Count != 0 && stack.Peek() == '-')
-                        {
-                            stack.Push(c);
-                        }
-                        else
-                        {
-                            list.Add(c.ToString());
-                        }
-                    }
+                        str += c;
+                    }                    
+                }
+                if (str != string.Empty)
+                {
+                    list.Add(str);
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex);
             }
+
             return list;
+            
         }
 
         /// <summary>

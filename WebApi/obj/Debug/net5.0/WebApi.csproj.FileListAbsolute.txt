@@ -1,0 +1,87 @@
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.csprojAssemblyReference.cache
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.AssemblyInfoInputs.cache
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.AssemblyInfo.cs
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\appsettings.json
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\WebApi.exe
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\WebApi.deps.json
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\WebApi.runtimeconfig.json
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\WebApi.runtimeconfig.dev.json
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\WebApi.dll
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\ref\WebApi.dll
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\WebApi.pdb
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\staticwebassets\WebApi.StaticWebAssets.Manifest.cache
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\staticwebassets\WebApi.StaticWebAssets.xml
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\scopedcss\bundle\WebApi.styles.css
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.csproj.CopyComplete
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.dll
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\ref\WebApi.dll
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.pdb
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.genruntimeconfig.cache
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.csprojAssemblyReference.cache
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.AssemblyInfoInputs.cache
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.AssemblyInfo.cs
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.csproj.CoreCompileInputs.cache
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.dll
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\ref\WebApi.dll
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.pdb
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\appsettings.Development.json
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\appsettings.json
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\WebApi.exe
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\WebApi.deps.json
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\WebApi.runtimeconfig.json
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\WebApi.runtimeconfig.dev.json
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\WebApi.dll
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\ref\WebApi.dll
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\WebApi.pdb
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\staticwebassets\WebApi.StaticWebAssets.Manifest.cache
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\staticwebassets\WebApi.StaticWebAssets.xml
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\scopedcss\bundle\WebApi.styles.css
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.RazorTargetAssemblyInfo.cache
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.csproj.CopyComplete
+C:\cmoney-calculate\postfixCal\postfixCal\WebApi\obj\Debug\net5.0\WebApi.genruntimeconfig.cache
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\appsettings.json
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\WebApi.exe
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\WebApi.deps.json
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\WebApi.runtimeconfig.json
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\WebApi.runtimeconfig.dev.json
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\WebApi.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\ref\WebApi.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\WebApi.pdb
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\WebApi.csprojAssemblyReference.cache
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\WebApi.AssemblyInfoInputs.cache
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\WebApi.AssemblyInfo.cs
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\staticwebassets\WebApi.StaticWebAssets.Manifest.cache
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\staticwebassets\WebApi.StaticWebAssets.xml
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\scopedcss\bundle\WebApi.styles.css
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\WebApi.csproj.CopyComplete
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\WebApi.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\ref\WebApi.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\WebApi.pdb
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\WebApi.genruntimeconfig.cache

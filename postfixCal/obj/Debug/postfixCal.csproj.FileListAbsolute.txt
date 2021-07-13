@@ -1,0 +1,60 @@
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\bin\Debug\postfixCal.exe.config
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\bin\Debug\postfixCal.exe
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\bin\Debug\postfixCal.pdb
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.csprojAssemblyReference.cache
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.Form1.resources
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.Properties.Resources.resources
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.csproj.GenerateResource.cache
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.csproj.CoreCompileInputs.cache
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.exe
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.pdb
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\bin\Debug\Json.Net.dll
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.csproj.CopyComplete
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\bin\Debug\System.Web.Http.dll
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\bin\Debug\System.Web.Http.xml
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\bin\Debug\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Users\kkbbg\OneDrive\桌面\計算機\postfixCal\postfixCal\postfixCal\bin\Debug\zh-Hant\System.Web.Http.resources.dll
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\bin\Debug\postfixCal.exe.config
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\bin\Debug\postfixCal.exe
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\bin\Debug\postfixCal.pdb
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\bin\Debug\Json.Net.dll
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\bin\Debug\Newtonsoft.Json.dll
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\bin\Debug\System.Net.Http.Formatting.dll
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\bin\Debug\System.Web.Http.dll
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\bin\Debug\Newtonsoft.Json.xml
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\bin\Debug\System.Net.Http.Formatting.xml
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\bin\Debug\System.Web.Http.xml
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\bin\Debug\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\bin\Debug\zh-Hant\System.Web.Http.resources.dll
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.csprojAssemblyReference.cache
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.Form1.resources
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.Properties.Resources.resources
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.csproj.GenerateResource.cache
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.csproj.CoreCompileInputs.cache
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.csproj.CopyComplete
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.exe
+C:\cmoney-calculate\postfixCal\postfixCal\postfixCal\obj\Debug\postfixCal.pdb
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\bin\Debug\postfixCal.exe.config
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\bin\Debug\postfixCal.exe
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\bin\Debug\postfixCal.pdb
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\bin\Debug\Json.Net.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\bin\Debug\System.Web.Http.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\bin\Debug\System.Web.Http.xml
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\bin\Debug\zh-Hant\System.Net.Http.Formatting.resources.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\bin\Debug\zh-Hant\System.Web.Http.resources.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\obj\Debug\postfixCal.csprojAssemblyReference.cache
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\obj\Debug\postfixCal.Form1.resources
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\obj\Debug\postfixCal.Properties.Resources.resources
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\obj\Debug\postfixCal.csproj.GenerateResource.cache
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\obj\Debug\postfixCal.csproj.CoreCompileInputs.cache
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\obj\Debug\postfixCal.csproj.CopyComplete
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\obj\Debug\postfixCal.exe
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\obj\Debug\postfixCal.pdb

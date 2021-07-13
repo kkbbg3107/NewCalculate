@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "postfixCal", "postfixCal\postfixCal.csproj", "{D263161B-3BE1-42A1-8526-2670DD0DB81E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{E3785349-5572-45C7-9E3A-3E2ED8CAD84D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D263161B-3BE1-42A1-8526-2670DD0DB81E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D263161B-3BE1-42A1-8526-2670DD0DB81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D263161B-3BE1-42A1-8526-2670DD0DB81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D263161B-3BE1-42A1-8526-2670DD0DB81E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3785349-5572-45C7-9E3A-3E2ED8CAD84D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3785349-5572-45C7-9E3A-3E2ED8CAD84D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3785349-5572-45C7-9E3A-3E2ED8CAD84D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3785349-5572-45C7-9E3A-3E2ED8CAD84D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D243F25-B0D8-4D20-B10E-A9A8C66125CB}
+	EndGlobalSection
+EndGlobal

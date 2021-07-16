@@ -8,8 +8,7 @@ using ClassLibrary1.Model;
 namespace WebApi.Services
 {
     public class InfixToPostfix : IStringToList, IPostAll
-    {    
-       
+    {           
         /// <summary>
         /// 優先權判定
         /// </summary>
@@ -35,6 +34,7 @@ namespace WebApi.Services
             {
                 return priority = -100;
             }
+
             return 0;
         }
 
@@ -70,11 +70,13 @@ namespace WebApi.Services
                         s.Push(postfix[i] + string.Empty);
                     }
                 }
+
                 string ans = string.Empty;
                 while (s.Count > 0)
                 {
                     ans += s.Pop();
                 }
+
                 res = ans;
             }
             catch (Exception ex)
@@ -99,7 +101,10 @@ namespace WebApi.Services
                 case "/":
                 case "*":
                     return true;
+                default:
+                    break;
             }
+
             return false;
         }
 
@@ -159,12 +164,14 @@ namespace WebApi.Services
                         stack.Push(postfix[j]);
                     }
                 }
+
                 answer = (string)stack.Pop();
             }
             catch (Exception ex)
             {
                 return ex.Message;
             }
+
             return answer;
         }
 
@@ -190,7 +197,7 @@ namespace WebApi.Services
                     }
                     else if (c == ")")
                     {
-                        if (stack.Count != 0)  //負號的右括號
+                        if (stack.Count != 0)  // 負號的右括號
                         {
                             container += stack.Pop();
                             container += str;
@@ -203,6 +210,7 @@ namespace WebApi.Services
                             list.Add(str);
                             str = string.Empty;
                         }
+
                         list.Add(c);
                     }
                     else if (c == "+" || c == "*" || c == "/")
@@ -212,6 +220,7 @@ namespace WebApi.Services
                             list.Add(str);
                             str = string.Empty;
                         }
+
                         list.Add(c);
                     }
                     else if (c == "-")
@@ -248,6 +257,7 @@ namespace WebApi.Services
                         str += c;
                     }
                 }
+
                 if (str != string.Empty)
                 {
                     list.Add(str);
@@ -270,9 +280,8 @@ namespace WebApi.Services
         /// </summary>
         /// <param name="infix"></param>
         /// <returns>後序表達式集合</returns>
-        private List<string> ToPostfix(List<string> infix)
+        private static List<string> ToPostfix(List<string> infix)
         {
-
             int priority = 0; // 權重
 
             List<string> postList = new List<string>(); // 後序表達示
@@ -299,6 +308,7 @@ namespace WebApi.Services
                                 postList.Add(temp);
                                 temp = string.Empty;
                             }
+
                             stack.Push(c);
                         }
                         else if (prior == 5)
@@ -344,6 +354,7 @@ namespace WebApi.Services
                                 // 直到stack裡遇到'('把上面的運算子都pop出來
                                 postList.Add(stack.Pop().ToString());
                             }
+
                             stack.Pop(); // 遇到的'('也要移掉
                         }
                         else if (prior == 9)
@@ -356,6 +367,7 @@ namespace WebApi.Services
                                     postList.Add(temp);
                                     temp = string.Empty;
                                 }
+
                                 stack.Push(c);
                             }
                             else if (stack.Peek().ToString() == "*" || stack.Peek().ToString() == "/")
@@ -365,6 +377,7 @@ namespace WebApi.Services
                                     postList.Add(temp);
                                     temp = string.Empty;
                                 }
+
                                 postList.Add(stack.Pop().ToString());
                                 stack.Push(c);
                             }
@@ -375,6 +388,7 @@ namespace WebApi.Services
                                     postList.Add(temp);
                                     temp = string.Empty;
                                 }
+
                                 stack.Push(c);
                             }
                         }
@@ -396,6 +410,7 @@ namespace WebApi.Services
                                 postList.Add(temp);
                                 temp = string.Empty;
                             }
+
                             postList.Add(stack.Pop().ToString());
                         }
                     }
@@ -405,6 +420,7 @@ namespace WebApi.Services
             {
                 Console.WriteLine(ex);
             }
+
             return postList;
         }
 
@@ -415,10 +431,9 @@ namespace WebApi.Services
         /// <returns>UI控制項物件</returns>
         public Calculate PostAll(Calculate cal)
         {                                 
-
-            if (cal.button == "api")
+            if (cal.Button == "api")
             {
-                var p = ToListService(cal.label);
+                var p = ToListService(cal.Label);
                 var postList = ToPostfix(p); // 後序表達式
                 var result = PostfixToNum(postList); // 運算結果
                 Response data = new Response();
@@ -426,50 +441,47 @@ namespace WebApi.Services
                 var prefix = PostfixToPrefix(postList);
 
                 data.Prefix = prefix;
-                data.Formula = cal.label;
+                data.Formula = cal.Label;
                 data.Postfix = postfix;
                 data.Result = result;
 
-                cal.textboxResult = $"PostFix : {data.Postfix}, Formula : {data.Formula}, Prefix : {data.Prefix}, Result : {data.Result}";
+                cal.TextboxResult = $"PostFix : {data.Postfix}, Formula : {data.Formula}, Prefix : {data.Prefix}, Result : {data.Result}";
                 return cal;
             }
-            else if (cal.button == "C")
+            else if (cal.Button == "C")
             {
-                cal.label = string.Empty;
-                cal.textboxFirst = string.Empty;
+                cal.Label = string.Empty;
+                cal.TextboxFirst = string.Empty;
 
                 return cal;
             }
-            else if (cal.button == "√")
+            else if (cal.Button == "√")
             {
-                if (Double.TryParse(cal.textboxFirst, out var number))
+                if (double.TryParse(cal.TextboxFirst, out var number))
                 {
-                    cal.textboxFirst = Math.Sqrt(number).ToString();
+                    cal.TextboxFirst = Math.Sqrt(number).ToString();
                 }
 
                 return cal;
             }
-            else if (cal.button == "+/-")
+            else if (cal.Button == "+/-")
             {
-                cal.textboxFirst = "(" + cal.textboxFirst.Insert(0, "-") + ")";
+                cal.TextboxFirst = "(" + cal.TextboxFirst.Insert(0, "-") + ")";
 
                 return cal;
             }
             else
-            {                
-
-                var isOperationPerformed = false;
-
-                if (cal.button == ".")
+            {
+                if (cal.Button == ".")
                 {
-                    if (!cal.textboxFirst.Contains("."))
+                    if (!cal.TextboxFirst.Contains("."))
                     {
-                        cal.textboxFirst = cal.textboxFirst + cal.button;
+                        cal.TextboxFirst += cal.Button;
                     }
                 }
                 else
                 {
-                    switch (cal.button)
+                    switch (cal.Button)
                     {
                         case "+":
                         case "-":
@@ -477,51 +489,56 @@ namespace WebApi.Services
                         case "/":
                             try
                             {
-                                cal.label += cal.textboxFirst;
-                                if (cal.label.Substring(cal.label.Length - 1) == "+" || cal.label.Substring(cal.label.Length - 1) == "-" || cal.label.Substring(cal.label.Length - 1) == "*" || cal.label.Substring(cal.label.Length - 1) == "/")
+                                cal.Label += cal.TextboxFirst;
+                                if (cal.Label.Substring(cal.Label.Length - 1) == "+" || cal.Label.Substring(cal.Label.Length - 1) == "-" || cal.Label.Substring(cal.Label.Length - 1) == "*" || cal.Label.Substring(cal.Label.Length - 1) == "/")
                                 {
-                                    cal.label = cal.label.Substring(0, cal.label.Length - 1);
-                                    cal.label += cal.button;
-                                    isOperationPerformed = false;
+                                    cal.Label = cal.Label.Substring(0, cal.Label.Length - 1);
+                                    cal.Label += cal.Button;                     
                                 }
                                 else
                                 {
-                                    cal.label += cal.button;
-                                    cal.textboxFirst = string.Empty;
+                                    cal.Label += cal.Button;
+                                    cal.TextboxFirst = string.Empty;
                                 }
                             }
                             catch (Exception ex)
                             {
-                                Console.WriteLine("運算子不能再最前方");
+                                Console.WriteLine($"運算子不能再最前方+{ex}");
                             }
+
                             break;
                         case ")":
 
-                            cal.label += cal.textboxFirst + cal.button;
-                            cal.textboxFirst = string.Empty;
-                            break;
-                        case "(": //後面只能接數字  
+                            cal.Label += cal.TextboxFirst + cal.Button;
+                            cal.TextboxFirst = string.Empty;
 
-                            cal.label += cal.button;
+                            break;
+                        case "(": // 後面只能接數字  
+
+                            cal.Label += cal.Button;
+
                             break;
                         case "=":
 
-                            cal.label += cal.textboxFirst;
-                            cal.textboxFirst = string.Empty;
+                            cal.Label += cal.TextboxFirst;
+                            cal.TextboxFirst = string.Empty;
+
                             break;
                         case "Back":
 
-                            if (cal.textboxFirst != string.Empty)
+                            if (cal.TextboxFirst != string.Empty)
                             {
-                                cal.textboxFirst = cal.textboxFirst.Substring(0, cal.textboxFirst.Length - 1);
+                                cal.TextboxFirst = cal.TextboxFirst.Substring(0, cal.TextboxFirst.Length - 1);
                             }
+
                             break;
                         default:
 
-                            cal.textboxFirst += cal.button;
+                            cal.TextboxFirst += cal.Button;
                             break;
                     }
                 }
+
                 return cal;
             }            
         }

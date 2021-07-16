@@ -45,10 +45,10 @@ namespace postfixCal
              
             var cal = new Calculate()
             {
-                button = btn.Text,
-                label = lblText.Text,
-                textboxFirst = textBox3.Text,
-                textboxResult = textBox2.Text,
+                Button = btn.Text,
+                Label = lblText.Text,
+                TextboxFirst = textBox3.Text,
+                TextboxResult = textBox2.Text,
             };
 
             string json = JsonConvert.SerializeObject(cal);
@@ -63,10 +63,10 @@ namespace postfixCal
             var result = JsonConvert.DeserializeObject<Calculate>(ans);
 
             // 控制向改變狀態
-            textBox2.Text = result.textboxResult;
-            textBox3.Text = result.textboxFirst;
-            lblText.Text = result.label;
-            btn.Text = result.button;
+            textBox2.Text = result.TextboxResult;
+            textBox3.Text = result.TextboxFirst;
+            lblText.Text = result.Label;
+            btn.Text = result.Button;
         }
     }
 }

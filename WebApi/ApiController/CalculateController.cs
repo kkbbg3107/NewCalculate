@@ -12,10 +12,15 @@ namespace WebApi.ApiController
     [ApiController]
     public class CalculateController : ControllerBase
     {
+        /// <summary>
+        /// logger提示欄位
+        /// </summary>
         private readonly ILogger<CalculateController> _logger;
 
+        /// <summary>
+        /// 介面欄位
+        /// </summary>
         private readonly IPostAll _all;
-
 
         /// <summary>
         /// 建立相依
@@ -34,7 +39,7 @@ namespace WebApi.ApiController
         /// <param name="cal">控制項物件</param>
         /// <returns>控制項物件</returns>
         [HttpPost("PostAll")]
-        public  Calculate PostCal([FromBody] Calculate cal)
+        public Calculate PostCal([FromBody] Calculate cal)
         {
             StringBuilder inform = new StringBuilder(DateTime.Now.ToString());
             inform.Append($"CalculateController的PostSquare方法被呼叫,傳入參數為{cal}");

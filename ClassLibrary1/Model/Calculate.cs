@@ -9,9 +9,9 @@ namespace ClassLibrary1.Model
     /// </summary>
     public class Calculate
     {
-        public string button { get; set; }
-        public string label { get; set; }
-        public string textboxFirst { get; set; }
-        public string textboxResult { get; set; }
+        public string Button { get; set; }
+        public string Label { get; set; }
+        public string TextboxFirst { get; set; }
+        public string TextboxResult { get; set; }
     }
 }

@@ -66,7 +66,7 @@ namespace postfixCal
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 54);
             this.button1.TabIndex = 0;
-            this.button1.Tag = "num1";
+            this.button1.Tag = "5";
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.ButtonClick);
@@ -79,6 +79,7 @@ namespace postfixCal
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 54);
             this.button2.TabIndex = 1;
+            this.button2.Tag = "5";
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.ButtonClick);
@@ -91,6 +92,7 @@ namespace postfixCal
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 54);
             this.button3.TabIndex = 2;
+            this.button3.Tag = "5";
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.ButtonClick);
@@ -103,6 +105,7 @@ namespace postfixCal
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 54);
             this.button4.TabIndex = 3;
+            this.button4.Tag = "5";
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.ButtonClick);
@@ -115,6 +118,7 @@ namespace postfixCal
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(103, 54);
             this.button5.TabIndex = 4;
+            this.button5.Tag = "5";
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.ButtonClick);
@@ -127,6 +131,7 @@ namespace postfixCal
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(103, 54);
             this.button6.TabIndex = 5;
+            this.button6.Tag = "5";
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.ButtonClick);
@@ -139,6 +144,7 @@ namespace postfixCal
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(103, 54);
             this.button7.TabIndex = 6;
+            this.button7.Tag = "5";
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.ButtonClick);
@@ -151,6 +157,7 @@ namespace postfixCal
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(103, 54);
             this.button8.TabIndex = 7;
+            this.button8.Tag = "5";
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.ButtonClick);
@@ -163,6 +170,7 @@ namespace postfixCal
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(103, 54);
             this.button9.TabIndex = 8;
+            this.button9.Tag = "5";
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.ButtonClick);
@@ -175,6 +183,7 @@ namespace postfixCal
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(103, 54);
             this.button10.TabIndex = 9;
+            this.button10.Tag = "5";
             this.button10.Text = "0";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.ButtonClick);
@@ -187,6 +196,7 @@ namespace postfixCal
             this.btnsub.Name = "btnsub";
             this.btnsub.Size = new System.Drawing.Size(103, 54);
             this.btnsub.TabIndex = 10;
+            this.btnsub.Tag = "5";
             this.btnsub.Text = "-";
             this.btnsub.UseVisualStyleBackColor = true;
             this.btnsub.Click += new System.EventHandler(this.ButtonClick);
@@ -199,6 +209,7 @@ namespace postfixCal
             this.btnplus.Name = "btnplus";
             this.btnplus.Size = new System.Drawing.Size(103, 54);
             this.btnplus.TabIndex = 11;
+            this.btnplus.Tag = "5";
             this.btnplus.Text = "+";
             this.btnplus.UseVisualStyleBackColor = true;
             this.btnplus.Click += new System.EventHandler(this.ButtonClick);
@@ -211,6 +222,7 @@ namespace postfixCal
             this.btnmul.Name = "btnmul";
             this.btnmul.Size = new System.Drawing.Size(103, 54);
             this.btnmul.TabIndex = 12;
+            this.btnmul.Tag = "5";
             this.btnmul.Text = "*";
             this.btnmul.UseVisualStyleBackColor = true;
             this.btnmul.Click += new System.EventHandler(this.ButtonClick);
@@ -223,6 +235,7 @@ namespace postfixCal
             this.btndiv.Name = "btndiv";
             this.btndiv.Size = new System.Drawing.Size(103, 54);
             this.btndiv.TabIndex = 13;
+            this.btndiv.Tag = "5";
             this.btndiv.Text = "/";
             this.btndiv.UseVisualStyleBackColor = true;
             this.btndiv.Click += new System.EventHandler(this.ButtonClick);
@@ -235,6 +248,7 @@ namespace postfixCal
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(103, 54);
             this.button16.TabIndex = 16;
+            this.button16.Tag = "5";
             this.button16.Text = ")";
             this.button16.UseVisualStyleBackColor = true;
             this.button16.Click += new System.EventHandler(this.ButtonClick);
@@ -247,6 +261,7 @@ namespace postfixCal
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(103, 54);
             this.button17.TabIndex = 17;
+            this.button17.Tag = "5";
             this.button17.Text = "(";
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.ButtonClick);
@@ -254,11 +269,12 @@ namespace postfixCal
             // button18
             // 
             this.button18.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.Location = new System.Drawing.Point(349, 240);
+            this.button18.Location = new System.Drawing.Point(643, 373);
             this.button18.Margin = new System.Windows.Forms.Padding(4);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(103, 54);
+            this.button18.Size = new System.Drawing.Size(95, 54);
             this.button18.TabIndex = 18;
+            this.button18.Tag = "2";
             this.button18.Text = "C";
             this.button18.UseVisualStyleBackColor = true;
             this.button18.Click += new System.EventHandler(this.ButtonClick);
@@ -266,11 +282,12 @@ namespace postfixCal
             // button19
             // 
             this.button19.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(220, 240);
+            this.button19.Location = new System.Drawing.Point(73, 241);
             this.button19.Margin = new System.Windows.Forms.Padding(4);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(103, 54);
             this.button19.TabIndex = 19;
+            this.button19.Tag = "5";
             this.button19.Text = ".";
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.ButtonClick);
@@ -287,12 +304,12 @@ namespace postfixCal
             // button20
             // 
             this.button20.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(522, 511);
+            this.button20.Location = new System.Drawing.Point(643, 442);
             this.button20.Margin = new System.Windows.Forms.Padding(4);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(103, 54);
+            this.button20.Size = new System.Drawing.Size(95, 54);
             this.button20.TabIndex = 22;
-            this.button20.Tag = "";
+            this.button20.Tag = "1";
             this.button20.Text = "api";
             this.button20.UseVisualStyleBackColor = true;
             this.button20.Click += new System.EventHandler(this.ButtonClick);
@@ -313,10 +330,11 @@ namespace postfixCal
             // 
             // btnequ
             // 
-            this.btnequ.Location = new System.Drawing.Point(73, 240);
+            this.btnequ.Location = new System.Drawing.Point(220, 240);
             this.btnequ.Name = "btnequ";
             this.btnequ.Size = new System.Drawing.Size(103, 54);
             this.btnequ.TabIndex = 25;
+            this.btnequ.Tag = "5";
             this.btnequ.Text = "=";
             this.btnequ.UseVisualStyleBackColor = true;
             this.btnequ.Click += new System.EventHandler(this.ButtonClick);
@@ -327,6 +345,7 @@ namespace postfixCal
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(95, 54);
             this.btnOpen.TabIndex = 26;
+            this.btnOpen.Tag = "3";
             this.btnOpen.Text = "√";
             this.btnOpen.UseVisualStyleBackColor = true;
             this.btnOpen.Click += new System.EventHandler(this.ButtonClick);
@@ -337,6 +356,7 @@ namespace postfixCal
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(95, 54);
             this.button11.TabIndex = 27;
+            this.button11.Tag = "4";
             this.button11.Text = "+/-";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.ButtonClick);
@@ -351,10 +371,11 @@ namespace postfixCal
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(643, 373);
+            this.btnBack.Location = new System.Drawing.Point(349, 241);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(95, 53);
+            this.btnBack.Size = new System.Drawing.Size(103, 53);
             this.btnBack.TabIndex = 29;
+            this.btnBack.Tag = "5";
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.ButtonClick);

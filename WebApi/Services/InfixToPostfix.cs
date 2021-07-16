@@ -3,34 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using WebApi.InterFace;
-using WebApi.Models;
+using ClassLibrary1.Model;
 
 namespace WebApi.Services
-{   
-    public class InfixToPostfix : IStringToList, IDataService, IPostClear, IPostText, ISquareRoot, INegative
-
-    {
-        /// <summary>
-        /// 計算機邏輯
-        /// </summary>
-        /// <param name="infix">中序表達式</param>
-        /// <returns>後序表達式</returns>
-        public NumGroup.NumSingleResult PostNumber(string infix)
-        {
-            var p = ToListService(infix);
-            var postList = ToPostfix(p); // 後序表達式
-            var result = PostfixToNum(postList); // 運算結果
-            NumGroup.NumSingleResult data = new NumGroup.NumSingleResult();
-            var postfix = string.Join(",", postList.ToArray());
-            var prefix = PostfixToPrefix(postList);
-
-            data.Prefix = prefix;
-            data.Formula = infix;
-            data.Postfix = postfix;
-            data.Result = result;
-            return data;          
-        }
-
+{
+    public class InfixToPostfix : IStringToList, IPostAll
+    {    
+       
         /// <summary>
         /// 優先權判定
         /// </summary>
@@ -98,11 +77,11 @@ namespace WebApi.Services
                 }
                 res = ans;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return ex.Message;
             }
-                         
+
             return res;
         }
 
@@ -181,11 +160,11 @@ namespace WebApi.Services
                     }
                 }
                 answer = (string)stack.Pop();
-            }  
-            catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 return ex.Message;
-            }            
+            }
             return answer;
         }
 
@@ -194,17 +173,15 @@ namespace WebApi.Services
         /// </summary>
         /// <param name="infix">計算機輸入的算式</param>
         /// <returns>依照每個符號定義的列表</returns>
-        public List<string> ToListService(string infix) // ex 8.5+(-9.8) => "8.5" , "+" , "(" , "-9.8" , ")"  80 + 95  => "80" , "+" , "95"
+        public List<string> ToListService(string infix)
         {
-            var makeSure = string.Empty;
             var str = string.Empty;
             var container = string.Empty;
             List<string> list = new List<string>();
             Stack<string> stack = new Stack<string>();
-            Stack<string> stackToQueue = new Stack<string>();
             try
             {
-                for(int i = 0; i < infix.Length; i++)
+                for (int i = 0; i < infix.Length; i++)
                 {
                     var c = infix[i].ToString();
                     if (c == "(")
@@ -221,7 +198,7 @@ namespace WebApi.Services
                             container = string.Empty; // 清空字串容器
                             str = string.Empty;
                         }
-                        else if( str != string.Empty)
+                        else if (str != string.Empty)
                         {
                             list.Add(str);
                             str = string.Empty;
@@ -230,7 +207,7 @@ namespace WebApi.Services
                     }
                     else if (c == "+" || c == "*" || c == "/")
                     {
-                        if(str != string.Empty)
+                        if (str != string.Empty)
                         {
                             list.Add(str);
                             str = string.Empty;
@@ -249,11 +226,17 @@ namespace WebApi.Services
                         {
                             stack.Push(c);
                         }
-                        else if (list.Count != 0 && list[list.Count -1].ToString() == ")") // 減號前面右括號時
+                        else if (list.Count != 0 && list[list.Count - 1].ToString() == ")") // 減號前面右括號時
                         {
                             list.Add(c);
-                        }                            
+                        }
                         else if (list.Count == 0)
+                        {
+                            list.Add(str);
+                            str = string.Empty;
+                            list.Add(c);
+                        }
+                        else
                         {
                             list.Add(str);
                             str = string.Empty;
@@ -263,7 +246,7 @@ namespace WebApi.Services
                     else
                     {
                         str += c;
-                    }                    
+                    }
                 }
                 if (str != string.Empty)
                 {
@@ -276,7 +259,6 @@ namespace WebApi.Services
             }
 
             return list;
-            
         }
 
         /// <summary>
@@ -288,9 +270,9 @@ namespace WebApi.Services
         /// </summary>
         /// <param name="infix"></param>
         /// <returns>後序表達式集合</returns>
-        private List<string> ToPostfix(List<string> infix) //(-8)*(-8)+(-9)
+        private List<string> ToPostfix(List<string> infix)
         {
-          
+
             int priority = 0; // 權重
 
             List<string> postList = new List<string>(); // 後序表達示
@@ -417,59 +399,131 @@ namespace WebApi.Services
                             postList.Add(stack.Pop().ToString());
                         }
                     }
-                }            
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex);
             }
             return postList;
         }
 
-        public Task<Num> PostText(string text)
-        {
-            return Task.Run(() =>
+        /// <summary>
+        /// 計算機api 邏輯
+        /// </summary>
+        /// <param name="cal">UI控制項物件</param>
+        /// <returns>UI控制項物件</returns>
+        public Calculate PostAll(Calculate cal)
+        {                                 
+
+            if (cal.button == "api")
             {
-                Num result = new Num();
-                result.Text = text;
+                var p = ToListService(cal.label);
+                var postList = ToPostfix(p); // 後序表達式
+                var result = PostfixToNum(postList); // 運算結果
+                Response data = new Response();
+                var postfix = string.Join(",", postList.ToArray());
+                var prefix = PostfixToPrefix(postList);
 
-                return result;
-            });
-        }
+                data.Prefix = prefix;
+                data.Formula = cal.label;
+                data.Postfix = postfix;
+                data.Result = result;
 
-        public Task<Num> PostBlank(string text)
-        {
-            return Task.Run(() =>
+                cal.textboxResult = $"PostFix : {data.Postfix}, Formula : {data.Formula}, Prefix : {data.Prefix}, Result : {data.Result}";
+                return cal;
+            }
+            else if (cal.button == "C")
             {
-                Num result = new Num();
-                result.Text = string.Empty;
+                cal.label = string.Empty;
+                cal.textboxFirst = string.Empty;
 
-                return result;
-            });
-        }
-
-        public Task<Num> PostSquare(string text)
-        {
-            return Task.Run(() =>
+                return cal;
+            }
+            else if (cal.button == "√")
             {
-                
-                Num result = new Num();
-                if (Double.TryParse(text, out var number))
+                if (Double.TryParse(cal.textboxFirst, out var number))
                 {
-                    result.Text = Math.Sqrt(number).ToString();
+                    cal.textboxFirst = Math.Sqrt(number).ToString();
                 }
-                return result;
-            });
-        }
 
-        public Task<Num> PostNegative(string text)
-        {
-            return Task.Run(() =>
+                return cal;
+            }
+            else if (cal.button == "+/-")
             {
-                Num result = new Num();
-                result.Text = "(" + text.Insert(0, "-") + ")";
-                return result;
-            });
-        }           
+                cal.textboxFirst = "(" + cal.textboxFirst.Insert(0, "-") + ")";
+
+                return cal;
+            }
+            else
+            {                
+
+                var isOperationPerformed = false;
+
+                if (cal.button == ".")
+                {
+                    if (!cal.textboxFirst.Contains("."))
+                    {
+                        cal.textboxFirst = cal.textboxFirst + cal.button;
+                    }
+                }
+                else
+                {
+                    switch (cal.button)
+                    {
+                        case "+":
+                        case "-":
+                        case "*":
+                        case "/":
+                            try
+                            {
+                                cal.label += cal.textboxFirst;
+                                if (cal.label.Substring(cal.label.Length - 1) == "+" || cal.label.Substring(cal.label.Length - 1) == "-" || cal.label.Substring(cal.label.Length - 1) == "*" || cal.label.Substring(cal.label.Length - 1) == "/")
+                                {
+                                    cal.label = cal.label.Substring(0, cal.label.Length - 1);
+                                    cal.label += cal.button;
+                                    isOperationPerformed = false;
+                                }
+                                else
+                                {
+                                    cal.label += cal.button;
+                                    cal.textboxFirst = string.Empty;
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine("運算子不能再最前方");
+                            }
+                            break;
+                        case ")":
+
+                            cal.label += cal.textboxFirst + cal.button;
+                            cal.textboxFirst = string.Empty;
+                            break;
+                        case "(": //後面只能接數字  
+
+                            cal.label += cal.button;
+                            break;
+                        case "=":
+
+                            cal.label += cal.textboxFirst;
+                            cal.textboxFirst = string.Empty;
+                            break;
+                        case "Back":
+
+                            if (cal.textboxFirst != string.Empty)
+                            {
+                                cal.textboxFirst = cal.textboxFirst.Substring(0, cal.textboxFirst.Length - 1);
+                            }
+                            break;
+                        default:
+
+                            cal.textboxFirst += cal.button;
+                            break;
+                    }
+                }
+                return cal;
+            }            
+        }
     }
 }

@@ -58,3 +58,5 @@ C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\obj\
 C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\obj\Debug\postfixCal.csproj.CopyComplete
 C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\obj\Debug\postfixCal.exe
 C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\obj\Debug\postfixCal.pdb
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\bin\Debug\ClassLibrary1.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\postfixCal\bin\Debug\ClassLibrary1.pdb

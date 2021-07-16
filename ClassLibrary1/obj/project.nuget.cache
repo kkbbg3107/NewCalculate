@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "0Ifs3JXwcJqkxowYRj27D/WK8MYnHn19f4qDp5O4H7HYyQ3+jokRu5uLKDK9oQEbD4b0k0qEwE35NbycOfvWzA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kkbbg\\OneDrive\\桌面\\Calculate-main (1)\\Calculate-main\\ClassLibrary1\\ClassLibrary1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kkbbg\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\kkbbg\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

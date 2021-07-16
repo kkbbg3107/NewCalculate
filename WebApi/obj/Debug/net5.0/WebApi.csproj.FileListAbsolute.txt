@@ -85,3 +85,5 @@ C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debu
 C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\ref\WebApi.dll
 C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\WebApi.pdb
 C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\obj\Debug\net5.0\WebApi.genruntimeconfig.cache
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\ClassLibrary1.dll
+C:\Users\kkbbg\OneDrive\桌面\Calculate-main (1)\Calculate-main\WebApi\bin\Debug\net5.0\ClassLibrary1.pdb

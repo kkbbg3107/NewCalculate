@@ -39,7 +39,7 @@ namespace postfixCal
         /// </summary>
         /// <param name="sender">引發事件的物件</param>
         /// <param name="e">事件的額外細項</param>
-        private async void ButtonClick(object sender, EventArgs e)
+        private  void ButtonClick(object sender, EventArgs e)
         {            
             Button btn = sender as Button;
              
@@ -55,7 +55,7 @@ namespace postfixCal
 
             HttpContent contentPost = new StringContent(json, Encoding.UTF8, "application/json"); // 定義json內容
 
-            HttpResponseMessage response = await client.PostAsync(UrlCal, contentPost);
+            HttpResponseMessage response = client.PostAsync(UrlCal, contentPost).Result;
             response.EnsureSuccessStatusCode();
 
             var ans = response.Content.ReadAsStringAsync().Result;

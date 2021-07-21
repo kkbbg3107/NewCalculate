@@ -20,14 +20,14 @@ namespace WebApi.ApiController
         /// <summary>
         /// 介面欄位
         /// </summary>
-        private readonly IPostAll _all;
+        private readonly IFactory _all;
 
         /// <summary>
         /// 建立相依
         /// </summary>
         /// <param name="dataService">抽象servie邏輯</param>
         /// <param name="logger">檢查api輸入正確性</param>
-        public CalculateController(IPostAll all, ILogger<CalculateController> logger)
+        public CalculateController(IFactory all, ILogger<CalculateController> logger)
         {
             this._all = all;
             this._logger = logger;

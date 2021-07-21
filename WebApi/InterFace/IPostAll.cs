@@ -11,6 +11,6 @@ namespace WebApi.InterFace
     /// </summary>
     public interface IPostAll
     {
-        Calculate PostAll(Calculate cal);
+        IFactory PostAll(Calculate cal);
     }
 }

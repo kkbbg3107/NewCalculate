@@ -66,8 +66,7 @@ namespace postfixCal
             textBox2.Text = result.TextboxResult;
             textBox3.Text = result.TextboxFirst;
             lblText.Text = result.Label;
-            btn.Text = result.Button;
-            Console.WriteLine("123");
+            btn.Text = result.Button;         
         }
     }
 }

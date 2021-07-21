@@ -1,0 +1,55 @@
+[33mcommit 3568ae40e878759e270daa95893189bdd3b86154[m[33m ([m[1;36mHEAD -> [m[1;32mdog[m[33m, [m[1;32mnewMet[m[33m)[m
+Author: kane <kkbbg3106@gmail.com>
+Date:   Wed Jul 21 11:22:39 2021 +0800
+
+    Revert "0721 TEST"
+    
+    This reverts commit 9675693f36913a9ea9b1038701a94be7864c8e0d.
+
+[33mcommit 9675693f36913a9ea9b1038701a94be7864c8e0d[m
+Author: kane <kkbbg3106@gmail.com>
+Date:   Wed Jul 21 11:21:57 2021 +0800
+
+    0721 TEST
+
+[33mcommit 99e6250736be485a11537dac8674657967a61fb7[m[33m ([m[1;32mmaster[m[33m)[m
+Author: kane <kkbbg3106@gmail.com>
+Date:   Wed Jul 21 10:33:20 2021 +0800
+
+    7/21 練習分支
+
+[33mcommit 5ac61e8a1a1efc33a4eb3400dc9a846726c42de2[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: kane <kkbbg3106@gmail.com>
+Date:   Wed Jul 21 10:24:16 2021 +0800
+
+    0721 微調ASYNC
+
+[33mcommit f86dd4165a7762281400c2d0893e8fa23da9b9a2[m
+Author: kane <kkbbg3106@gmail.com>
+Date:   Fri Jul 16 14:01:12 2021 +0800
+
+    0716 註解完成
+
+[33mcommit 6db9c18cecbedb4086dd09445d054914a46c2bb1[m
+Author: kane <kkbbg3106@gmail.com>
+Date:   Fri Jul 16 13:33:22 2021 +0800
+
+    0713  前端判斷移置後端 + post api 修改
+
+[33mcommit 50261131bbaf89c74b94ee20068dcf0a041760b4[m
+Author: kane <kkbbg3106@gmail.com>
+Date:   Tue Jul 13 15:26:16 2021 +0800
+
+    防呆 計算負數完成
+
+[33mcommit 46b9dbf0272bb90d2c9064ae17c5b84c0052e764[m
+Author: kane <kkbbg3106@gmail.com>
+Date:   Tue Jul 13 10:20:01 2021 +0800
+
+    update calculate
+
+[33mcommit bed20558bfd6cf8c26f8eb6291259a2846767850[m
+Author: kane <kkbbg3106@gmail.com>
+Date:   Tue Jul 13 10:14:35 2021 +0800
+
+    first commit

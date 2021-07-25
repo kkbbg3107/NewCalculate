@@ -39,15 +39,15 @@ namespace WebApi.ApiController
         /// <param name="cal">控制項物件</param>
         /// <returns>控制項物件</returns>
         [HttpPost("PostAll")]
-        public Calculate PostCal([FromBody] Calculate cal)
+        public IButton PostCal([FromBody] Calculate cal)
         {
             StringBuilder inform = new StringBuilder(DateTime.Now.ToString());
             inform.Append($"CalculateController的PostSquare方法被呼叫,傳入參數為{cal}");
 
             _logger.LogWarning(2001, inform.ToString());
-            
-            var result = _all.PostAll(cal);
-               
+
+            var result = _all.UseButton(cal);
+
             return result;
         }
     }

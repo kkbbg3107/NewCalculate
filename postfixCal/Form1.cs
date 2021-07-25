@@ -39,7 +39,7 @@ namespace postfixCal
         /// </summary>
         /// <param name="sender">引發事件的物件</param>
         /// <param name="e">事件的額外細項</param>
-        private  void ButtonClick(object sender, EventArgs e)
+        private void ButtonClick(object sender, EventArgs e)
         {            
             Button btn = sender as Button;
              

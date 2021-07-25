@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace WebApi
 {
-    /// <summary>
-    /// 紀錄按鈕實現方法
-    /// </summary>
-    public interface IFactory
+    public interface IButton
     {
-        IButton UseButton(Calculate cal);
+        IFactory UseButton(Calculate cal);
     }
 }

@@ -5,11 +5,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebApi.Text
+namespace WebApi.Factory
 {
-    public class Api : IFactory
+    public class ApiFactory : IButton
     {
 
+        private readonly Calculate _cal;       
+
+        public ApiFactory(Calculate cal)
+        {
+            _cal = cal;
+        }
         /// <summary>
         /// 優先權判定
         /// </summary>
@@ -425,9 +431,28 @@ namespace WebApi.Text
             return postList;
         }
 
-        public Calculate PostAll(Calculate cal)
-        {
+        //public Calculate PostAll(Calculate cal)
+        //{
 
+        //    var p = ToListService(cal.Label);
+        //    var postList = ToPostfix(p); // 後序表達式
+        //    var result = PostfixToNum(postList); // 運算結果
+        //    Response data = new Response();
+        //    var postfix = string.Join(",", postList.ToArray());
+        //    var prefix = PostfixToPrefix(postList);
+
+        //    data.Prefix = prefix;
+        //    data.Formula = cal.Label;
+        //    data.Postfix = postfix;
+        //    data.Result = result;
+
+        //    cal.TextboxResult = $"PostFix : {data.Postfix}, Formula : {data.Formula}, Prefix : {data.Prefix}, Result : {data.Result}";
+        //    return cal;
+        //}
+
+        public IFactory UseButton(Calculate cal)
+        {
+            var api = new ApiFactory(cal);
             var p = ToListService(cal.Label);
             var postList = ToPostfix(p); // 後序表達式
             var result = PostfixToNum(postList); // 運算結果
@@ -441,7 +466,7 @@ namespace WebApi.Text
             data.Result = result;
 
             cal.TextboxResult = $"PostFix : {data.Postfix}, Formula : {data.Formula}, Prefix : {data.Prefix}, Result : {data.Result}";
-            return cal;
+            return api;
         }
     }
 }
